@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  app:
+    image: zeroone-accesslog
+    build: .
+    command: python app.py
+    volumes:
+      - .:/usr/src/app
